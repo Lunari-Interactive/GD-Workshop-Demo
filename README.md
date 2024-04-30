@@ -91,9 +91,9 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <!-- CONTACT -->
 ## Contact
-<p>FrenzyyLumina - [@FrenzyyLumina](https://FrenzyyLumina) <br>
+FrenzyyLumina - [@FrenzyyLumina](https://FrenzyyLumina) 
+<br />
 TatteredMayonez 
-</p>
 
 
 
