@@ -54,7 +54,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-A simple platformer made as a Starter Template for Video Game Development. Created to immerse students of Video Game Development in a workshop environment @Rizal Technological University
+A simple platformer made as a Starter Template for Video Game Development. Created to immerse students of video game development as an introduction to the Unity Game Engine in a workshop environment @Rizal Technological University
 
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
