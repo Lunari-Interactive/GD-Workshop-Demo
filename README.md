@@ -6,6 +6,29 @@
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/Lunari-Interactive/GD-Workshop-Demo">
+    <img src="Images/LunariInteractive.png" alt="Logo" width="80" height="80">
+  </a>
+
+<h3 align="center">project_title</h3> 
+
+  <p align="center">
+    project_description
+    <br />
+    <a href="https://github.com/Lunari-Interactive/GD-Workshop-Demo"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/Lunari-Interactive/GD-Workshop-Demo">View Demo</a>
+    ·
+    <a href="https://github.com/Lunari-Interactive/GD-Workshop-Demo/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
+    ·
+    <a href="https://github.com/Lunari-Interactive/GD-Workshop-Demo/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
+  </p>
+</div>
+
 
 
 
