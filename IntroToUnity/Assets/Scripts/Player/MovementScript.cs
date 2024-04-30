@@ -64,6 +64,10 @@ public class MovementScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(playerWins || playerLoses)
+        {
+            inPlay = false;
+        }
         if (inPlay)
         {
             //Moving
@@ -124,7 +128,7 @@ public class MovementScript : MonoBehaviour
     void Crouch()
     {
         playerHitbox.size = new Vector2(1, 0.5035717f);
-        playerHitbox.offset = new Vector2(0, -0.2482141f);
+        playerHitbox.offset = new Vector2(0, -0.2412141f);
         movSpeed = crouchingSpeed;
         isCrouching = true;
         animator.SetBool("isCrouching", true);
