@@ -50,7 +50,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultSpeed: 1
-  runSpeed: 4
+  runSpeed: 8
   detectionDistance: 5
   eyes: {fileID: 1408066677785757016}
   patrolPoint1: {fileID: 1408066676536903844}
