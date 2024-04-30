@@ -1,4 +1,3 @@
-# GD-Workshop-Demo
 <a name="readme-top"></a>
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
@@ -13,13 +12,13 @@
     <img src="Images/LunariInteractive.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">project_title</h3> 
+<h3 align="center">Game Development Workshop Demo</h3> 
 
   <p align="center">
-    project_description
+     A Video Game Starter Template made in Unity.
     <br />
-    <a href="https://github.com/Lunari-Interactive/GD-Workshop-Demo"><strong>Explore the docs »</strong></a>
-    <br />
+ <!--   <a href="https://github.com/Lunari-Interactive/GD-Workshop-Demo"><strong>Explore the docs »</strong></a> 
+    <br /> -->
     <br />
     <a href="https://github.com/Lunari-Interactive/GD-Workshop-Demo">View Demo</a>
     ·
@@ -29,9 +28,86 @@
   </p>
 </div>
 
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details>
+
+
+<!-- ABOUT THE PROJECT -->
+## About The Project
+A simple platformer made as a Starter Template for Video Game Development. Created to immerse students of Video Game Development in a workshop environment @Rizal Technological University
+
+<!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
+
+### Built With
+
+* ![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=csharp&logoColor=white)
+* ![Unity](https://img.shields.io/badge/unity-%23000000.svg?style=for-the-badge&logo=unity&logoColor=white)
+* ![Visual Studio](https://img.shields.io/badge/Visual%20Studio-5C2D91.svg?style=for-the-badge&logo=visual-studio&logoColor=white)
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
+<!-- GETTING STARTED -->
+## Getting Started
+
+### Prerequisites
+* [Unity Hub](https://unity.com/download#how-get-started)
+* Unity Free Personal License
+* [Unity Version 2021.3.14f1 LTS Release](https://unity.com/releases/editor/qa/lts-releases?version=2021.3&major_version=2021&minor_version=3&page=2#:~:text=December%201%2C%202022-,LTS%20Release,2021.3.14f1,-Released%3A%20November)
+* [Visual Studio 2022 Unity Game Development Tools](https://visualstudio.microsoft.com/vs/unity-tools/)
+
+### Installation
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/Lunari-Interactive/GD-Workshop-Demo.git
+   ```
+
+<!-- LICENSE -->
+## License
+
+Distributed under the MIT License. See `LICENSE.txt` for more information.
+
+
+
+<!-- CONTACT -->
+## Contact
+
+FrenzyyLumina - [@FrenzyyLumina](https://FrenzyyLumina) 
+TatteredMayonez - [@FrenzyyLumina](https://FrenzyyLumina) 
+
+
+
+<!-- ACKNOWLEDGMENTS -->
+## Acknowledgments
+
+* []()
+* []()
+* []()
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
