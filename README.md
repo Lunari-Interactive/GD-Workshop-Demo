@@ -96,15 +96,13 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 ## Contact
 
 FrenzyyLumina - [@FrenzyyLumina](https://FrenzyyLumina) 
-TatteredMayonez - [@FrenzyyLumina](https://FrenzyyLumina) 
+TatteredMayonez 
 
 
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* []()
-* []()
 * []()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
