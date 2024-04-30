@@ -123,5 +123,5 @@ TatteredMayonez
 [issues-shield]: https://img.shields.io/github/issues/Lunari-Interactive/GD-Workshop-Demo.svg?style=for-the-badge
 [issues-url]: https://github.com/Lunari-Interactive/GD-Workshop-Demo/issues
 [license-shield]: https://img.shields.io/github/license/Lunari-Interactive/GD-Workshop-Demo.svg?style=for-the-badge
-[license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
+[license-url]: https://github.com/Lunari-Interactive/GD-Workshop-Demo/blob/main/LICENSE.txt
 [product-screenshot]: Images/LunariInteractive.png
