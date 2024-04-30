@@ -65,9 +65,6 @@ A simple platformer made as a Starter Template for Video Game Development. Creat
 * ![Visual Studio](https://img.shields.io/badge/Visual%20Studio-5C2D91.svg?style=for-the-badge&logo=visual-studio&logoColor=white)
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -94,14 +91,15 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <!-- CONTACT -->
 ## Contact
-
-FrenzyyLumina - [@FrenzyyLumina](https://FrenzyyLumina) 
+<p>FrenzyyLumina - [@FrenzyyLumina](https://FrenzyyLumina) <br>
 TatteredMayonez 
+</p>
+
 
 
 
 <!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
+## Acknowledgements
 
 * []()
 
