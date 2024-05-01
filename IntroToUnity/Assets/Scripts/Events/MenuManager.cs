@@ -27,7 +27,6 @@ public class MenuManager : MonoBehaviour
         {
             winScreen.SetActive(true);
             player.canDie = false;
-            Time.timeScale = 0f;
         }
         if (player.playerLoses)
         {

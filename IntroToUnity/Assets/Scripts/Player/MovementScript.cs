@@ -89,32 +89,32 @@ public class MovementScript : MonoBehaviour
             //Jumping
             if (currJumpCount > 0 && Input.GetButtonDown("Jump"))
             {
-                rb.velocity = new Vector2(0, jumpHeight);
-                currJumpCount--;
+                Jump();
             }
 
             //Crouching
-            if (Input.GetKey(KeyCode.LeftShift))
+            if (Input.GetKeyDown(KeyCode.LeftShift))
             {
                 Crouch();
 
                 //makes it so that you fall faster while crouching
-                if (rb.velocity.y < 0)
+                if (rb.velocity.y < 0 && isCrouching)
                 {
                     rb.gravityScale = 2.5f;
                 }
                 else
                 {
-                    rb.gravityScale = 1;
+                    rb.gravityScale = 1f;
                 }
             }
-            else
+            if (Input.GetKeyUp(KeyCode.LeftShift))
             {
                 playerHitbox.size = hitboxHeight;
                 playerHitbox.offset = hitboxCenter;
                 movSpeed = speed;
                 animator.SetBool("isCrouching", false);
                 isCrouching = false;
+                rb.gravityScale = 1f;
             }
         }
 
@@ -123,6 +123,12 @@ public class MovementScript : MonoBehaviour
         {
             playerLoses = true;
         }
+    }
+
+    void Jump()
+    {
+        rb.velocity = new Vector2(0, jumpHeight);
+        currJumpCount -= 1;
     }
 
     void Crouch()
@@ -150,7 +156,8 @@ public class MovementScript : MonoBehaviour
         //Detects if you collided with a portal, which loads the next level
         if(collision.gameObject.tag == "Portal")
         {
-            playerWins = true;
+            StartCoroutine(Win());
+
             canDie = false;
             inPlay = false;
 
@@ -158,17 +165,28 @@ public class MovementScript : MonoBehaviour
             portal.PlayerWins();
         }
         Vector3 normal = collision.GetContact(0).normal;
-        if(normal == Vector3.up)
+        if (normal == Vector3.up)
         {
             animator.SetBool("isFalling", false);
             animator.SetBool("hasLanded", true);
         }
-        
+
+    }
+
+    IEnumerator Win()
+    {
+        yield return new WaitForSeconds(3f);
+        playerWins = true;
     }
 
     private void OnCollisionStay2D(Collision2D collision)
     {
-        animator.SetBool("hasLanded", false);
+        Vector3 normal = collision.GetContact(0).normal;
+        if (normal == Vector3.up)
+        {
+            animator.SetBool("isFalling", false);
+            animator.SetBool("hasLanded", false);
+        }
     }
 
     private void OnCollisionExit2D(Collision2D collision)

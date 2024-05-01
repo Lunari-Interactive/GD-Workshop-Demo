@@ -99,6 +99,7 @@ public class TerrybearEnemy : MonoBehaviour
     {
         Gizmos.DrawWireSphere(patrolPoint1.transform.position, 0.5f);
         Gizmos.DrawWireSphere(patrolPoint2.transform.position, 0.5f);
-
+        Vector3 pos = new Vector3(eyes.transform.position.x + detectionDistance, eyes.transform.position.y, eyes.transform.position.z);
+        Gizmos.DrawLine(eyes.transform.position, pos);
     }
 }

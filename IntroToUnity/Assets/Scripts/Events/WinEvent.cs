@@ -5,16 +5,33 @@ using UnityEngine.SceneManagement;
 
 public class WinEvent : MonoBehaviour
 {
-    int loadNextLevel;
+    public int nextLevel;
+
+    Animator animator;
 
     private void Start()
     {
-        loadNextLevel = SceneManager.GetActiveScene().buildIndex + 1;
+        animator = gameObject.GetComponent<Animator>();
+    }
+    private void Update()
+    {
+        if (animator.GetCurrentAnimatorStateInfo(0).IsName("PlayerWins"))
+        {
+            animator.SetBool("Transition", false);
+        }
     }
 
     public void PlayerWins()
     {
-        SceneManager.LoadScene(loadNextLevel);
+        StartCoroutine(Win());
+        animator.SetBool("Transition", true);
+        animator.SetBool("playerWins", true);
+    }
+
+    IEnumerator Win()
+    {
+        yield return new WaitForSeconds(5f);
+        SceneManager.LoadScene(nextLevel);
     }
 
 }
