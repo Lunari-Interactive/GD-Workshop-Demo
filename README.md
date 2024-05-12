@@ -73,14 +73,22 @@ A simple platformer made as a Starter Template for Video Game Development. Creat
 * [Unity Hub](https://unity.com/download#how-get-started)
 * Unity Free Personal License
 * [Unity Version 2021.3.14f1 LTS Release](https://unity.com/releases/editor/qa/lts-releases?version=2021.3&major_version=2021&minor_version=3&page=2#:~:text=December%201%2C%202022-,LTS%20Release,2021.3.14f1,-Released%3A%20November)
-* [Visual Studio 2022 Unity Game Development Tools](https://visualstudio.microsoft.com/vs/unity-tools/)
+* [Visual Studio 2022 with Unity Game Development Tools](https://visualstudio.microsoft.com/vs/unity-tools/)
 
 ### Installation
 
-1. Clone the repo
+1. Clone the repo or get it from [Releases](https://github.com/Lunari-Interactive/GD-Workshop-Demo/releases)
    ```sh
    git clone https://github.com/Lunari-Interactive/GD-Workshop-Demo.git
    ```
+2. Open Unity Hub <br />
+
+3. On Projects Add (GD-Workshop-Demo\IntroToUnity)<br />
+   ![Unity Hub](images/uhub.png)
+   
+4. Select Editor version 2021.3.14f1 <br />
+   ![Unity Version](images/unityverpng.png)
+
 
 <!-- LICENSE -->
 ## License
