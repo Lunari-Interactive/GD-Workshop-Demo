@@ -82,9 +82,13 @@ A simple platformer made as a Starter Template for Video Game Development. Creat
    git clone https://github.com/Lunari-Interactive/GD-Workshop-Demo.git
    ```
 2. Open Unity Hub <br />
-on Projects Add (C:\Users\USER\Downloads\GD-Workshop-Demo\IntroToUnity)
+
+3. On Projects Add (GD-Workshop-Demo\IntroToUnity)<br />
+   ![Unity Hub](images/uhub.png)
    
-3. Select Editor version 2021.3.14f1
+4. Select Editor version 2021.3.14f1 <br />
+   ![Unity Version](images/unityverpng.png)
+
 
 <!-- LICENSE -->
 ## License
