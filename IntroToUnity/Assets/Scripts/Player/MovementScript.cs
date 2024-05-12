@@ -143,18 +143,23 @@ public class MovementScript : MonoBehaviour
     //Detects if the player has collided with anything
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        Vector3 normal = collision.GetContact(0).normal;
         //Refreshes jump
         if (collision.gameObject.tag == "Ground" && currJumpCount <= 0)
         {
             currJumpCount = jumpCount;
         }
         //Detects Enemies
-        if (collision.gameObject.tag == "Enemy" && canDie)
+        if (collision.gameObject.tag == "Enemy" && canDie && normal != Vector3.up)
+        {
+            playerLoses = true;
+        }
+        if (collision.gameObject.tag == "Enemy" && canDie && collision.gameObject.layer == 3)
         {
             playerLoses = true;
         }
         //Detects if you collided with a portal, which loads the next level
-        if(collision.gameObject.tag == "Portal")
+        if (collision.gameObject.tag == "Portal")
         {
             StartCoroutine(Win());
 
@@ -164,11 +169,15 @@ public class MovementScript : MonoBehaviour
             WinEvent portal = collision.gameObject.GetComponent<WinEvent>();
             portal.PlayerWins();
         }
-        Vector3 normal = collision.GetContact(0).normal;
+        
         if (normal == Vector3.up)
         {
             animator.SetBool("isFalling", false);
             animator.SetBool("hasLanded", true);
+            if(collision.gameObject.tag == "Enemy" && collision.gameObject.layer != 3)
+            {
+                Destroy(collision.gameObject);
+            }
         }
 
     }
