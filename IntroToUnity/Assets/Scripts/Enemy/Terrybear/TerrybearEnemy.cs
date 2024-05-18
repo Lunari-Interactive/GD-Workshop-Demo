@@ -23,9 +23,13 @@ public class TerrybearEnemy : MonoBehaviour
 
     private SpriteRenderer spriteRenderer;
 
+    private AudioManager audio;
+
     // Start is called before the first frame update
     void Start()
     {
+        audio = GameObject.Find("AudioManager").GetComponent<AudioManager>();
+
         anim = gameObject.GetComponent<Animator>();
         rb = gameObject.GetComponent<Rigidbody2D>();
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
@@ -44,9 +48,12 @@ public class TerrybearEnemy : MonoBehaviour
             {
                 anim.SetBool("isAgressive", true);
                 defaultSpeed = runSpeed;
+                audio.Play("TerrybearChasing");
+                
             }
             else
             {
+                audio.Play("TerrybearWalking");
                 anim.SetBool("isAgressive", false);
                 defaultSpeed = normalSpeed;
             }
@@ -58,11 +65,13 @@ public class TerrybearEnemy : MonoBehaviour
             {
                 anim.SetBool("isAgressive", true);
                 defaultSpeed = runSpeed;
+                audio.Play("TerrybearChasing");
             }
             else
             {
                 anim.SetBool("isAgressive", false);
                 defaultSpeed = normalSpeed;
+                audio.Play("TerrybearWalking");
             }
         }
 

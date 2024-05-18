@@ -25,6 +25,7 @@ public class MovementScript : MonoBehaviour
     Vector2 hitboxHeight;
     Vector2 hitboxCenter;
 
+    private AudioManager audio;
     private SpriteRenderer animations;
     private Animator animator;
     private Rigidbody2D rb;
@@ -52,6 +53,7 @@ public class MovementScript : MonoBehaviour
         currJumpCount = jumpCount;
         canDie = true;
 
+        audio = GameObject.Find("AudioManager").GetComponent<AudioManager>();
         rb = gameObject.GetComponent<Rigidbody2D>();
         playerHitbox = gameObject.GetComponent<BoxCollider2D>();
         animations = gameObject.GetComponent<SpriteRenderer>();
@@ -72,7 +74,10 @@ public class MovementScript : MonoBehaviour
         {
             //Moving
             float movX = Input.GetAxis("Horizontal") * movSpeed / 10;
-
+            if(movX != 0)
+            {
+                audio.Play("PlayerWalking");
+            }
             animator.SetFloat("Speed", Mathf.Abs(movX));
 
             if (movX < 0)
@@ -90,6 +95,7 @@ public class MovementScript : MonoBehaviour
             if (currJumpCount > 0 && Input.GetButtonDown("Jump"))
             {
                 Jump();
+                audio.Play("PlayerJumping");
             }
 
             //Crouching
@@ -148,15 +154,18 @@ public class MovementScript : MonoBehaviour
         if (collision.gameObject.tag == "Ground" && currJumpCount <= 0)
         {
             currJumpCount = jumpCount;
+            audio.Play("PlayerLanding");
         }
         //Detects Enemies
         if (collision.gameObject.tag == "Enemy" && canDie && normal != Vector3.up)
         {
             playerLoses = true;
+            audio.Play("PlayerDeath");
         }
         if (collision.gameObject.tag == "Enemy" && canDie && collision.gameObject.layer == 3)
         {
             playerLoses = true;
+            audio.Play("PlayerDeath");
         }
         //Detects if you collided with a portal, which loads the next level
         if (collision.gameObject.tag == "Portal")
@@ -177,6 +186,7 @@ public class MovementScript : MonoBehaviour
             if(collision.gameObject.tag == "Enemy" && collision.gameObject.layer != 3)
             {
                 Destroy(collision.gameObject);
+                audio.Play("TerrybearDying");
             }
         }
 
